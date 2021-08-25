@@ -1,15 +1,19 @@
-let mymap = L.map('mapid').setView([51.505, -0.09], 13);
+// console.log('' + Distance('50 km').human_readable('customary'));
+let MY_COORDS = {
+    lat: 48.8589507, 
+    lon: 2.2770205
+};
 
-L.tileLayer('https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}?access_token={accessToken}', {
-    attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors, Imagery © <a href="https://www.mapbox.com/">Mapbox</a>',
-    maxZoom: 18,
-    id: 'mapbox/streets-v11',
-    tileSize: 512,
-    zoomOffset: -1,
-    accessToken: ''
-}).addTo(mymap);
+let SCOPE_COORDS = {
+    lat: 48.4084597,
+    lon: - 4.5346199
+};
 
-// ROUTE
-L.Routing.control({
-    geocoder: L.Control.Geocoder.nominatim()
-}).addTo(mymap);
+let getDistance = Distance.between(MY_COORDS, SCOPE_COORDS);
+
+console.log('' + getDistance.human_readable());
+
+if (getDistance > Distance('800 km')) {
+    console.log('Nice journey!');
+}
+

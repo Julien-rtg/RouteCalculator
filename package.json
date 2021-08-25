@@ -1,0 +1,23 @@
+{
+  "name": "routecalculator",
+  "description": "Calculate a map route using OpenStreetMap and Leaflet",
+  "version": "1.0.0",
+  "main": "index.js",
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://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@github.com/Julien-rtg/RouteCalculator.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Julien-rtg/RouteCalculator/issues"
+  },
+  "homepage": "https://github.com/Julien-rtg/RouteCalculator#readme",
+  "dependencies": {
+    "geo-distance": "^0.2.0"
+  }
+}
