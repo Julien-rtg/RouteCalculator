@@ -1,6 +1,5 @@
 # RouteCalculator
 
-Calculate a map route using OpenStreetMap and Leaflet
+Calculate distance beetween two points with geo-distance package
 
-
-Install the package leaflet routing machine for production use
+```https://www.npmjs.com/package/geo-distance```
